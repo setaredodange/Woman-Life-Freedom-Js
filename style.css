@@ -1,4 +1,59 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'popins',sans-serif;
+
+}
+
+
 body{
     background-color: rgb(104, 14, 104);
 }
 
+.search-input .icon{
+    position: absolute;
+    right :0px;
+    top:0px;
+    height: 55px;
+    width: 55px;
+    text-align: center;
+    line-height:55px;
+}  
+
+.search-input  .autocom-box{
+    padding: 0;
+    opacity: 0;
+    pointer-events: none;
+    max-height: 280px;
+    overflow-y: auto;
+
+}
+
+
+.search-input.active  .autocom-box{
+
+    padding: 10px 8px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.wrapper {
+    max-width: 450px;
+    margin: 150px auto;
+}
+
+.wrapper .serach-input {
+    background-color: rgb(185, 127, 240);
+    width: 100%;
+    border-radius: 5px;
+    position: relative;
+    box-shadow: 0px 1px 5px 3px rgb(155, 64, 155);
+}
+
+
+input{
+    width: 300px;
+    height: 40px;
+}
